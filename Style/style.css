@@ -1,0 +1,350 @@
+
+*{box-sizing: border-box;}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.bordercall{
+    border-bottom: 1px solid #cccccc;
+}
+.call{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    background-color: #ffa019;
+    border-radius: 10px;
+    color: #fff;
+    width: 190px ;
+    height: 35px;
+    border: 0px;
+    font-weight: 700px;
+    cursor: pointer;
+    
+}
+form{
+    display: flex;
+    margin-left: auto;
+}
+/*Шапка*/
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.header p{
+    margin-left: 50px;
+    position: relative;
+    left: 11.5%;
+}
+.header h2{
+    position: relative;
+}
+.main{
+    margin-left: 50px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+/*Фон для слогана*/
+.big-electric-scooter{
+    background: linear-gradient(180deg, rgba(94, 91, 91, 0.31) 0%, #3d3d3d 85.62%), url('../images/bg.png') no-repeat center top / cover;
+    width: auto;
+    height: 720px;
+    color: #fff;
+    text-align: center;
+    padding-top: 300px;
+}
+.logo{
+    font-size: 54px ;
+}
+.obzor{
+    font-size: 20px;
+    padding: 0px 200px;
+}
+.info_btn{
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900px;
+    cursor: pointer;
+}
+/*Приемущетсва и о нас*/
+.priem{
+    margin-top: 64px;
+    grid-column: 2 / 3;
+    grid-row: 4;
+    position: relative;
+}
+.priem h3
+{
+    font-size: 32px;
+    font-weight: 400px;
+}
+.priem_info{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.priem_info p{
+    margin-right: 10px;
+}
+.treug
+{
+    position: absolute;
+    right: 10%;
+    top: 1%;
+}
+.btn_treug
+{
+    font-size: 1.5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+}
+.btn__treug_img{
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+.btn_treug:active, .btn_treug:focus{
+    border: none;
+    outline:none;
+    resize:none;
+}
+
+.priem_about{
+    margin-top: 60px;
+}
+.priem_about p {
+    margin-top: 50px;
+}
+/*Рассылка*/
+.rassilka{
+    margin-top: 60px;
+    grid-column: 1 / 4;
+    grid-row: 5;
+    background-color: #ffa019;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+}
+.rassilka button{
+    background: #ffffff;
+}
+.nach
+{
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 5;
+    align-items: center;
+    justify-content: space-between;
+}
+.nach p {
+    color: #ffffff;
+}
+.rassilka input{
+    width: 250px;
+    height: 1px;
+    border: 1px solid #ffffff;
+    background-color: #ffa019;
+    padding: 15px;
+    color: #ffffff;
+}
+.nach input::placeholder{
+    color: #ffffff;
+}
+.nach button{
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    border: unset;
+}
+/*Плюсы и минусы*/
+.osobennosti{
+    margin-top: 60px;
+    grid-column: 2/ 3;
+    grid-row: 6;
+
+}
+.osobennosti h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+.osobennosti__plus_minus{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+.osobennosti_minus p, .osobennosti_plus p, .osobennosti__plus_two p{
+    margin-top: 8px;
+}
+.osobennosti_info{
+    margin-top: 32px;
+}
+.back
+{
+    background-color: #fbfbfb;
+}
+/*Каталог*/
+.informat{
+    display: flex;
+    position: absolute;
+    left: 59%;
+    bottom: 86%;
+}
+.informat p{
+    margin-left: 40px;
+}
+/*при наведении на варианты товаров в каталоге*/
+.informat p:hover{
+    width: auto;
+    border: 3px solid #ffa019;
+    border-radius: 20px;
+    background: #ffa019;
+    transition: 200ms;
+    color: #ffffff;
+    cursor: pointer;   
+}
+.catalog{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 70px;    
+}
+.catalog h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.catalog_img{
+    display: flex;
+    justify-content: space-around;
+}
+.catalog_img li{
+    list-style: none;
+}
+.catalog_img img{
+    width: 80%;
+}
+/*При наведении на товары*/
+.catalog_img img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 5px #b3b3b3;
+    transition: 1s;
+}
+/*Консультанты*/
+.team h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.team_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team_name{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fbfbfb;
+}
+.team_info{
+    margin-left: 16px;
+}
+.team_info button{
+    color: white;
+    margin-top: 24px;
+    background-color: #ffa019;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+/*Бренды*/
+.brands{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 200px;
+    background-color: #fbfbfb;
+    margin-top: 80px;
+    grid-column: 1/ 4;
+    grid-row: 9;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.brands li{
+    list-style: none;
+    font-size: 40px;
+    color: gray;
+}
+/*При наведении на название брендов*/
+.brands li:hover{
+    color: #ffbb00;
+    cursor: pointer;
+}
+/*Полезная информация*/
+.helpful h3 {
+    font-size: 32px;
+    font-weight: 400;
+}.helpful
+{
+    margin-top: 80px;
+}
+.helpful__img{
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/*Подвал*/
+.footer{ 
+    display: flex;
+    justify-content: space-around;
+}
+.footer_info{
+    color: grey;
+    margin-top: 5px;
+    max-width: 390px;
+}
+.footer_nav h4{
+    position: relative;
+    left: 29%;
+}
+.footer_nav li {
+    list-style: none;
+    position: relative;
+    left: 11%;
+}
+.footer_nav a,
+.header a{
+    color: gray;
+    text-decoration: none;
+}
+.footer_nav a:hover{
+    color: #ffbb00;
+}
+
+
